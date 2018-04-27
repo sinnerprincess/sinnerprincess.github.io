@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Muli|Roboto|Roboto+Condensed');
 
 html, body{
   margin: 0;
@@ -21,7 +21,7 @@ body {
   /*linear gradien red -> orange (to bootom)*/
 }
 
-.cap { /*text under main title*/
+p.cap { /*text under main title*/
   letter-spacing: -1px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -31,7 +31,7 @@ body {
   padding: 0;
 }
 
-.hey { /*main title*/
+p.hey { /*main title*/
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 100;
   font-size:  50px;
@@ -41,7 +41,7 @@ body {
   letter-spacing: -1px;
 }
 
-.pr-btn { /*skew button*/
+button.pr-btn { /*skew button*/
   margin: 10px;
 	width: 150px;
 	height: 50px;
@@ -56,4 +56,29 @@ body {
   border: none;
   text-align: center;
   /*infigure text settings*/
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+a:visited, a:link {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav {
+  font-family: 'Muli', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 25px 10px;
+  height: auto;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+li.nav1 {
+  margin-right: 100px;
+  text-align: left;
 }
