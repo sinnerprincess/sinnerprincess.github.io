@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Muli|Roboto|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Raleway|Roboto|Roboto+Condensed');
 
-html, body{
+html, body {
   margin: 0;
-  padding: 0;
   height: 100%;
   /*full-screen adaptation*/
   -webkit-font-smoothing: antialiased;
@@ -10,57 +9,77 @@ html, body{
   /*landing*/
 }
 
-body {
+section.main {
+  height: 90%;
   font-size: 20px;
   font-family: Helvetica, Arial, sans-serif;
   color: #ffffff;
   text-align: -webkit-center;
   /*text settings*/
   background:
-    linear-gradient(180deg, #ffe600, #c8370a);
-  /*linear gradien red -> orange (to bootom)*/
+    linear-gradient(180deg, #F1C40F, #e74c3c);
+  /*linear gradient red -> orange (to bootom)*/
 }
 
-p.cap { /*text under main title*/
+.cap { /*text under main title*/
   letter-spacing: -1px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 300;
   /*text settings*/
-  margin: 1px 0px 5px;
-  padding: 0;
+  margin: 3px 0px;
 }
 
-p.hey { /*main title*/
+.element { /*main title*/
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 100;
   font-size:  50px;
   font-weight: 600;
-  margin: 0;
-  padding-top: 25%;
   letter-spacing: -1px;
+  transform-origin: center bottom;
 }
 
-button.pr-btn { /*skew button*/
-  margin: 10px;
+#rectangle {  /* HACK: Button - Animation DWS*/
+  transition: 1s;
 	width: 150px;
-	height: 50px;
-  /*settings*/
-	-webkit-transform: skew(320deg);
-	-moz-transform: skew(320deg);
-  -ms-transform:skew(320deg);
-	-o-transform: skew(320deg);
-  /*figure creating & adaptation to
-  Chrome, Opera, Mozilla and Miicrosoft browsers*/
-	background: #ffffff;
-  border: none;
+	height: 35px;
+  color: #ffffff;
+  background: none;
+  margin: 10px;
+  border: 3px solid #ffffff;
   text-align: center;
-  /*infigure text settings*/
+  display: block;
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 35px;
 }
 
-li {
-  list-style-type: none;
+#rectangle:hover {
+  border-color: #000000;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.nav1 {
+  margin-left: 30%;
+}
+
+.nav1, .nav2, .nav3 {
+  transition: 1s;
   display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 100%;
+}
+
+.nav1:hover, .nav2:hover, .nav3:hover {
+  border-color: #000000;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 a:visited, a:link {
@@ -68,17 +87,55 @@ a:visited, a:link {
   color: #000000;
 }
 
-nav {
-  font-family: 'Muli', sans-serif;
+nav {  /* FIXME: Border in NAV */  /* FIXME: Blyat, Dima =, big fallop, fix this fucking nav bar fucking noob */
+  line-height: 400%;
+  font-family: 'Raleway', sans-serif;
   font-size: 25px;
-  font-weight: 600;
-  padding: 25px 10px;
-  height: auto;
-  background-color: #ffffff;
-  color: #000000;
+  font-weight: 200;
+  text-transform: uppercase;
+  height: 15%;
+  background-color: #FFFFFF;
+  color: #000000
 }
 
-li.nav1 {
-  margin-right: 100px;
-  text-align: left;
+section.cellar {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.intro {
+  top: 25%;
+  left: center;
+  padding: 25%;
+}
+
+.epic {
+  margin: 50px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.def_button {
+  transition: 1s;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border: 3px solid #000000;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 50%;
+  margin-top: 10px;
+  width: 150px;
+  height: 35px;
+  font-weight: 600;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+
+.def_button:hover {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
 }
